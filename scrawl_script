@@ -1,4 +1,4 @@
-##3 Step 1: Set up twitter oauth and load packages ###
+## Step 1: Set up twitter oauth and load packages ###
 library(twitteR)
 
 ## Step 2: scrawl large data ##
@@ -42,7 +42,6 @@ write.csv(orlando_time_df,file = 'rawdata.csv')
 ### Step 3: Calculate Sentiment Score with Dictionary ###
 orlando_sentimentscore <- read.csv("rawdata.csv")
 
-## Step 3.1: install required packages ##
 install.packages("tm")
 install.packages("SnowballC")
 library(tm)
@@ -125,7 +124,7 @@ write.csv(orlando_sentimentscore,file = "orlando_sentimentscores.csv")
 # 
 # write.csv(orlando_50000,file = 'orlando_50000.csv')
 
-### Step 4: create a word cloud and export a termDocument Matrix###
+### Step 5: create a word cloud and export a termDocument Matrix###
 library("tm")
 library("SnowballC")
 library("wordcloud")
