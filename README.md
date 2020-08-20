@@ -1,5 +1,6 @@
-# orlando_gunshot_twitter_analysis
+# Orlando Gunshot Twitter Analysis
 Please read the blog at [Initium Lab](http://initiumlab.com/blog/20160622-orlando-gunshot/)
+
 ## Methodology
 
 We take advantage of twitter public API to scratch data by locations. We first selected each state’ s biggest city to represent that state. Then the tweet-created time was limited between  12:00, June 12, to 24:00, June 13 (36 hours). For each city (50 cities in total), our rooftop is 10000. No matter how many tweets the API returned in each city, they will be returned randomly by the created time in the period. Moreover, our searching keywords included: “#OrlandoShooting”, “#Orlando”, ” #OrlandoUnited”, “#TwoMenKissing” and  “#LoveIsLove”.  
